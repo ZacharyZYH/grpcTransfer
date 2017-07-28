@@ -1,6 +1,7 @@
 # grpcTransfer
 a golang-gRPC file transfer project
 
+```
 Usage of server.exe:
   -port int
         The server port (default 8981)
@@ -14,3 +15,4 @@ Usage of client.exe:
         the name of the file you want to download
   -upload string
         the name of the file you want to upload
+```
