@@ -1,0 +1,1 @@
+protoc -I transfer/ transfer/transfer.proto --go_out=plugins=grpc:transfer

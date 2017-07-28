@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package transfer;
+
+// The file transfer service definition.
+service FileTransfer {
+	// upload a file
+	rpc Upload (UploadRequest) returns (UploadReply) {}
+	// download a file
+	rpc Download (DownloadRequest) returns (DownloadReply) {}
+}
+
+message UploadRequest {
+	string fileContents = 1;
+	string fileName = 2;
+}
+
+message UploadReply {
+	bool status = 1;
+}
+
+message DownloadRequest {
+	string fileName = 1;
+}
+
+// The response message containing the greetings
+message DownloadReply {
+	int fileExistence = 1;
+	string fileContents = 2;
+}
