@@ -16,7 +16,7 @@ var (
 	uploadName   = flag.String("upload", "", "the name of the file you want to upload")
 	downloadName = flag.String("download", "", "the name of the file you want to download")
 	fileContent  = flag.String("content", "", "the content of the file you want to upload")
-	addressNport = flag.String("P", "127.0.0.1:10000", "The server IPAddress and port")
+	addressNport = flag.String("P", "127.0.0.1:8981", "The server IPAddress and port")
 )
 
 func main() {
